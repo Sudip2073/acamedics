@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content%}
+    <div class="main_title_2">
+                
+        <h2>Your Courses</h2>
+        <p>Let's walk you through the courses.</p>
+    </div>
+    <div id="reccomended" class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="box_grid">
+                <figure>
+                    <a href="#0" class="wish_bt"></a>
+                    <a href="year1/">
+                        <div class="preview"><span>Preview course</span></div><img src="{% static 'img/2.jpg' %}" class="img-fluid" alt=""></a>
+                    
+
+                </figure>
+                <div class="wrapper">
+                    <small>BSc(HONS)Ethical Hacking and Cybersecurity </small>
+                    <h3>Year One</h3>
+                    <p>The first year focuses on enabling students from a diverse range of backgrounds to make a solid start on their degree courses and understand fundamental principles.</p>
+                    <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
+                </div>
+                <ul>
+                    <li><i class="icon_clock_alt"></i> 120 Credit</li>
+                    <li><i class="icon_like"></i> 890</li>
+                    <li><a href="year1/">View Modules</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /item -->
+        <div class="item">
+            <div class="box_grid">
+                <figure>
+                    <a href="#0" class="wish_bt"></a>
+                    <a href="year2/"><img src="{% static 'img/security.jpeg' %}" class="img-fluid" alt=""></a>
+                    
+                    <div class="preview"><span>Preview course</span></div>
+                </figure>
+                <div class="wrapper">
+                    <small>BSc(HONS)Ethical Hacking and Cybersecurity</small>
+                    <h3>Year Two</h3>
+                    <p>In the second year, we explore security-related topics in more depth, from more complex forensic analyses to penetration-testing of black-box networked systems.</p>
+                    <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
+                </div>
+                <ul>
+                    <li><i class="icon_clock_alt"></i> 120 Credit</li>
+                    <li><i class="icon_like"></i> 780</li>
+                    <li><a href="year2/">View Modules</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /item -->
+        <div class="item">
+            <div class="box_grid">
+                <figure>
+                    <a href="#0" class="wish_bt"></a>
+                    <a href="year3/"><img src="{% static 'img/3.jpg' %}" class="img-fluid" alt=""></a>
+                    
+                    <div class="preview"><span>Preview course</span></div>
+                </figure>
+                <div class="wrapper">
+                    <small>BSc(HONS)Ethical Hacking and Cybersecurity</small>
+                    <h3>Year Three</h3>
+                    <p>The final year of the BSc course covers advanced topics at the forefront of contemporary practice, such as malware analysis, exploit development and live-memory forensics.</p>
+                    <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(545)</small></div>
+                </div>
+                <ul>
+                    <li><i class="icon_clock_alt"></i> 120 Credit</li>
+                    <li><i class="icon_like"></i> 890</li>
+                    <li><a href="year3/">View Modules</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        
+        
+        <!-- /item -->
+    </div>
+    <!-- /carousel -->
+    <div class="container">
+        <p class="btn_home_align"><a href="courses-grid.html" class="btn_1 rounded">View all courses</a></p>
+    </div>
+<!-- /container -->
+    
+    
+{% endblock %}

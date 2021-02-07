@@ -1,0 +1,185 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Udema a modern educational site template">
+    <meta name="author" content="Ansonika">
+    <title>AcadEmics</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png' %}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png' %}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png' %}">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png' %}">
+
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- BASE CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+	<link href="{% static 'css/vendors.css' %}" rel="stylesheet">
+	<link href="{% static 'css/icon_fonts/css/all_icons.min.css' %}" rel="stylesheet">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
+    
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-11097556-8']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+</head>
+
+<body>
+		
+	<div id="page">
+		
+	<header class="header menu_2">
+		<div id="preloader"><div data-loader="circle-side"></div></div><!-- /Preload -->
+		<div id="logo">
+			<a href="/"><img src="{% static 'img/academics.png'%}" width="149" height="42" alt=""></a>
+		</div>
+		<ul id="top_menu">
+			
+		</ul>
+		<!-- /top_menu -->
+		<a href="#menu" class="btn_mobile">
+			<div class="hamburger hamburger--spin" id="hamburger">
+				<div class="hamburger-box">
+					<div class="hamburger-inner"></div>
+				</div>
+			</div>
+		</a>
+		<nav id="menu" class="main-menu">
+			<ul>
+				<li><span><a href="/mycourses">My learning</a></span>
+					
+				</li>
+				<li><span><a href="/routine">Routine</a></span>
+				</li>
+				<li><span><a href="/result">Result</a></span>
+				</li>
+				<li><span><a href="/support">Support</a></span>
+				</li>
+				<li><span><a href="/notification">Notification</a></span>
+				</li>
+
+				<li><span><a>Hello, {{request.user}}</a></span>
+					<ul>
+						<li><a href="/accounts/profile">Profile</a></li>
+						<li><a href="/guidelines">Guidelines</a></li>
+						<li><a href="/settings">Settings</a></li>
+						<li><a href="{% url 'logout' %}">Signout</a></li>
+						
+					</ul>
+				</li>
+				
+				
+			</ul>
+		</nav>
+		<!-- Search Menu -->
+		<div class="search-overlay-menu">
+			<span class="search-overlay-close"><span class="closebt"><i class="ti-close"></i></span></span>
+			<form role="search" id="searchform" method="get">
+				<input value="" name="q" type="search" placeholder="Search..." />
+				<button type="submit"><i class="icon_search"></i>
+				</button>
+			</form>
+		</div><!-- End Search Menu -->
+	</header>
+	<!-- /header -->
+	
+	
+		
+		<!-- /hero_single -->
+		<div class="features clearfix">
+			<div class="container">
+				
+			</div>
+		</div>
+		<!-- /features -->
+		
+		<div class="container-fluid margin_120_0">
+			
+		{% block content %}
+		{% endblock %}
+		</div>
+		<!-- /container -->
+
+	
+	<!-- /main -->
+
+	<footer>
+        <div id="footerpadding">
+		<div class="container margin_120_95">
+			<div class="row">
+				<div class="col-lg-5 col-md-12 p-r-5">
+					<p><img id= "footimg" src="{% static 'img/academicsfooter.png' %}" width="149" height="42" alt=""></p>
+					<p>An  online learning platform with uncompromised security system named “Acad-Emics” is a healthy and user-friendly educational website designed for any educational institute for e-learning.</p>
+					
+				</div>
+				<div class="col-lg-3 col-md-6 ml-lg-auto">
+					<h5>Useful links</h5>
+					<ul class="links">
+						<li><a href="notice">Notice</a></li>
+						<li><a href="blogs_and_articles">Blogs and Articles</a></li>
+						<li><a href="news_and_announcements">News and Announcements</a></li>
+						<li><a href="about">About</a></li>
+						<li><a href="uni-partner">Uni Partner</a></li>
+						<li><a href="guidelines">Guidelines</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h5>Address</h5>
+					<ul class="contacts">
+						<li><a href="#"><i class="ti-location-pin"></i>Dillibazar, Kathmandu, Nepal </a></li>
+						<li><a href="tel://61280932400"><i class="ti-mobile"></i>+977-1-4441577, 4425661</a></li>
+						<li>Softwarica College of IT & E-commerce</li>
+						
+					</ul>
+					<div class="follow_us">
+						<ul>
+							
+							<li><a href="//www.facebook.com"><i class="ti-facebook"></i></a></li>
+							<li><a href="//www.twitter.com"><i class="ti-twitter-alt"></i></a></li>
+							<li><a href="//www.google.com"><i class="ti-google"></i></a></li>
+							<li><a href="//www.pinterest.com"><i class="ti-pinterest"></i></a></li>
+							<li><a href="//www.instagram.com"><i class="ti-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--/row-->
+			
+			
+        </div>
+    </div>
+	</footer>
+	<!--/footer-->
+	</div>
+	<!-- page -->
+	
+	<!-- COMMON SCRIPTS -->
+    <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+    <script src="{% static 'js/common_scripts.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+	<script src="{% static 'assets/validate.js' %}"></script>
+	
+</body>
+</html>
