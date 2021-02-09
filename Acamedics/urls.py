@@ -39,6 +39,7 @@ urlpatterns = [
     path('reset/done/',auth_views.PasswordResetCompleteView.as_view(template_name='password_complete.html'),name = 'password_reset_complete'),
     path('settings/',auth_views.PasswordChangeView.as_view(template_name='settings.html'),name = 'password_change'),
     path('',auth_views.PasswordChangeDoneView.as_view(),name = 'password_change_done'),
+
   
     #path('',include('year.urls')),
     
