@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <h1>Notifications</h1>
+
+    <div id="reccomended" class="owl-carousel owl-theme">
+        {% for note in notice %}
+
+        <div class="item">
+            <div class="box_grid">
+                
+                <div class="wrapper">
+                    <h3>{{note.title}}</h3>
+                    <p>{{note.content}}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+{% endblock %}

@@ -5,4 +5,4 @@ from .models import *
 @admin.register(Modules)
 
 class ModulesAdmin(admin.ModelAdmin):
-    list_display=['name','year','mod_code','description','credit']
+    list_display=['name','year','mod_code','description','credit','image']

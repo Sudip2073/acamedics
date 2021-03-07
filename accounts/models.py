@@ -14,6 +14,7 @@ class Student(models.Model):
     description = models.TextField(blank=True)
     year= models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(3)])
     profile_pic = models.ImageField(null=True, blank= True)
+    batch = models.CharField(max_length=5)
 
     def __str__(self):
         return str(self.user)

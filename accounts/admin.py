@@ -5,7 +5,7 @@ from .models import *
 
 
 class Studentadmin(admin.ModelAdmin):
-    list_display=['name','sid','age','year','enrollement','description','profile_pic']
+    list_display=['name','sid','age','year','enrollement','description','profile_pic','batch']
 
 
 

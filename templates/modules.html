@@ -4,44 +4,33 @@
 
 <div>
     <div class="main_title_2">
-                
         <h2>Your Courses</h2>
-        <p>Let's walk you through the courses.</p>
+        <p>Let's walk you through the courses</p>
     </div>
-    
-        <div id="reccomended" class="owl-carousel owl-theme">  </div>
+        <div id="reccomended" class="owl-carousel owl-theme">
+            {% for i in mod %}
             <div class="item">
                 <div class="box_grid">
-                    
-                    {% for i in mod %}
-                        <figure>
+                    <figure>
                             <a href="#0" class="wish_bt"></a>
                             <a href="{% url 'modules_detail' i.mod_code %}">
-                                <div class="preview"><span>Preview course</span></div><img src="{% static 'img/2.jpg' %}" class="img-fluid" alt=""></a>
-                            
-        
-                        </figure>
-                        <div class="wrapper">
+                            <div class="preview"><span>{{i.description}}</span></div><img src="{% if i.image %}{{ i.image.url}}{% else%}{% static 'img/3.jpg' %}{% endif %}" class="img-fluid" alt=""></a>
+                    </figure>
+                    <div class="wrapper">
                             <small>BSc(HONS)Ethical Hacking and Cybersecurity </small>
                             <h3>{{i.name}}</h3>
                             <P>{{i.mod_code}}</P>
                             <p>{{i.description}}</p>
                             <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-                        </div>
-                        <ul>
-                            <li><i class="icon_clock_alt"></i> 120 Credit</li>
+                    </div>
+                    <ul>
+                            <li><i class="icon_clock_alt"></i> {{i.credit}} credit</li>
                             <li><i class="icon_like"></i> 890</li>
                             <li><a href="{% url 'modules_detail' i.mod_code %}">View Modules</a></li>
-                        </ul>
-                    {% endfor %} 
+                    </ul>  
                 </div>     
             </div>
+            {% endfor %}
         </div>
-    
-    
-            
-            
-        
-    
 </div>
 {% endblock %}

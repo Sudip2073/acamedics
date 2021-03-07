@@ -30,6 +30,7 @@ urlpatterns = [
     path('result/',include('result.urls')),
     path('support/',include('support.urls')),
     path('accounts/',include('accounts.urls')),
+    path('notification/',include('notification.urls')),
     
     
     # reset password urls

@@ -5,6 +5,10 @@
         <h1>{{Mod.name}}</h1>
         <h4>Year {{Mod.year}}</h4>
         <p>{{Mod.description}}</p>
+        {% if Mod.url != none %}
+                <p><a href="//{{Mod.url}}">{{Mod.url}}</a></p>
+        {% endif %}
+        <p><a href=" /img/{{Mod.file}}">{{Mod.file}}</a></p>
 </div>
 {% endblock %}
 

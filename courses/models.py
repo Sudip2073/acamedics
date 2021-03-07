@@ -13,5 +13,6 @@ class Modules(models.Model):    #Subject i.e. Digital forensics
     mod_code= models.CharField(max_length=9,validators=[MinLengthValidator(5), MaxLengthValidator(9)])
     description= models.TextField()
     credit= models.IntegerField()
-
-    
+    image= models.ImageField(blank=True)
+    file = models.FileField(upload_to='files',null=True)
+    url = models.URLField(blank=True)

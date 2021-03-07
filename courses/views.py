@@ -24,3 +24,4 @@ def modules_detail(request, Mod_code):
     return render(request, 'sub_detail.html',{
         'Mod': Mod,
     })
+
