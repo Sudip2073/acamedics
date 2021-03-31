@@ -151,4 +151,3 @@ EMAIL_HOST_PASSWORD = 'alpha@123'
 EMAIL_PORT = 587
 
 
-django_heroku.settings(locals())
