@@ -1,1 +1,1 @@
-web: gunicorn Acamedics.wsgi --logfile -
+web: gunicorn Acamedics.wsgi --log-file -
