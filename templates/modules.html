@@ -14,7 +14,7 @@
                     <figure>
                             <a href="#0" class="wish_bt"></a>
                             <a href="{% url 'modules_detail' i.mod_code %}">
-                            <div class="preview"><span>{{i.description}}</span></div><img src="{% if i.image %}{{ i.image.url}}{% else%}{% static 'img/3.jpg' %}{% endif %}" class="img-fluid" alt=""></a>
+                            <div class="preview"><span>{{i.description}}</span></div><img src="{% if i.image %}{{{% static i.image.url%}}{% else%}{% static 'img/3.jpg' %}{% endif %}" class="img-fluid" alt=""></a>
                     </figure>
                     <div class="wrapper">
                             <small>BSc(HONS)Ethical Hacking and Cybersecurity </small>
