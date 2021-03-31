@@ -1,154 +1,79 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+
 {% load static %}
 
-{% block content%}
-			<div class="main_title_2">
-				
-				<h2>Your Courses</h2>
-				<p>Let's walk you through the courses.</p>
-			</div>
-			<div id="reccomended" class="owl-carousel owl-theme">
-				<div class="item">
-					<div class="box_grid">
-						<figure>
-							<a href="#0" class="wish_bt"></a>
-							<a href="/mycourses/STW207SE">
-								<div class="preview"><span>Preview course</span></div><img src="{% static 'img/2.jpg' %}" class="img-fluid" alt=""></a>
-							
+{% block content %}
 
-						</figure>
-						<div class="wrapper">
-							<small>BSc(HONS)Ethical Hacking and Cybersecurity </small>
-							<h3>STW207SE</h3>
-							<p>Operating system, Security and Networks</p>
-							<div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-						</div>
-						<ul>
-							<li><i class="icon_clock_alt"></i> 360 Credit</li>
-							<li><i class="icon_like"></i> 890</li>
-							<li><a href="/mycourses/STW207SE">Enroll now</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- /item -->
-				<div class="item">
-					<div class="box_grid">
-						<figure>
-							<a href="#0" class="wish_bt"></a>
-							<a href="/mycourses/STW245CT"><img src="{% static 'img/1.jpg' %}" class="img-fluid" alt=""></a>
-							
-							<div class="preview"><span>Preview course</span></div>
-						</figure>
-						<div class="wrapper">
-							<small>BSc(HONS)Ethical Hacking and Cybersecurity</small>
-							<h3>STW245CT</h3>
-							<p>Ethical Hacking-An Introduction</p>
-							<div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-						</div>
-						<ul>
-							<li><i class="icon_clock_alt"></i> 360 Credit</li>
-							<li><i class="icon_like"></i> 780</li>
-							<li><a href="/mycourses/STW245CT">Enroll now</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- /item -->
-				<div class="item">
-					<div class="box_grid">
-						<figure>
-							<a href="#0" class="wish_bt"></a>
-							<a href="/mycourses/STW206CDE"><img src="{% static 'img/5.jpg' %}" class="img-fluid" alt=""></a>
-							
-							<div class="preview"><span>Preview course</span></div>
-						</figure>
-						<div class="wrapper">
-							<small>BSc(HONS)Ethical Hacking and Cybersecurity</small>
-							<h3>STW206CDE</h3>
-							<p>Real World Project</p>
-							<div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(545)</small></div>
-						</div>
-						<ul>
-							<li><i class="icon_clock_alt"></i>360 Credit</li>
-							<li><i class="icon_like"></i> 890</li>
-							<li><a href="/mycourses/STW206CDE">Enroll now</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- /item -->
-				<div class="item">
-					<div class="box_grid">
-						<figure>
-							<a href="#0" class="wish_bt"></a>
-							<a href="/mycourses/STW290COM"><img src="{% static 'img/digital-ethics.jpg' %}" class="img-fluid" alt=""></a>
-							
-							<div class="preview"><span>Preview course</span></div>
-						</figure>
-						<div class="wrapper">
-							<small>BSc(HONS)Ethical Hacking and Cybersecurity</small>
-							<h3>STW290COM</h3>
-							<p>Technology and its Legal, Social and Ethical Context</p>
-							<div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-						</div>
-						<ul>
-							<li><i class="icon_clock_alt"></i>10 Credit</li>
-							<li><i class="icon_like"></i> 890</li>
-							<li><a href="/mycourses/STW290COM">Enroll now</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- /item -->
-				<div class="item">
-					<div class="box_grid">
-						<figure>
-							<a href="#0" class="wish_bt"></a>
-							<a href="/mycourses/STW250CT"><img src="{% static 'img/3.jpg' %}" class="img-fluid" alt=""></a>
-							
-							<div class="preview"><span>Preview course</span></div>
-						</figure>
-						<div class="wrapper">
-							<small>BSc(HONS)Ethical Hacking and Cybersecurity</small>
-							<h3>STW250CT</h3>
-							<p>Networked System Architectures</p>
-							<div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-						</div>
-						<ul>
-							<li><i class="icon_clock_alt"></i>20 Credit</li>
-							<li><i class="icon_like"></i> 890</li>
-							<li><a href="/mycourses/STW250CT">Enroll now</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- /item -->
-				<div class="item">
-					<div class="box_grid">
-						<figure>
-							<a href="#0" class="wish_bt"></a>
-							<a href="/mycourses/STW216SE"><img src="{% static 'img/4.jpg' %}" class="img-fluid" alt=""></a>
-							
-							<div class="preview"><span>Preview course</span></div>
-						</figure>
-						<div class="wrapper">
-							<small>BSc(HONS)Ethical Hacking and Cybersecurity</small>
-							<h3>STW216SE</h3>
-							<p>Intermediate Digital Forensics</p>
-							<div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-						</div>
-						<ul>
-							<li><i class="icon_clock_alt"></i>20 Credit</li>
-							<li><i class="icon_like"></i> 890</li>
-							<li><a href="/mycourses/STW216SE">Enroll now</a></li>
-						</ul>
-					</div>
-				</div>
-				<!-- /item -->
-			</div>
-			<!-- /carousel -->
-			<div class="container">
-				<p class="btn_home_align"><a href="courses-grid.html" class="btn_1 rounded">View all courses</a></p>
-			</div>
-			<!-- /container -->
-			<hr>
-		</div>
-		<!-- /container -->
-{% endblock %}
+    <div class="banner">
+        <img src="static/img/banner.jpg" alt="Banner Image">
+    </div>
+
+    <div class="container course-tab">
+        <div class="course-tab-wrp text-center">
+            <h3>BSc Hons in Ethical Hacking and Cybersecurity</h3>
+            <ul>
+                <li>7 Modules</li>
+                <li>360 Credits</li>
+            </ul>
+        </div>
+
+        <div class="page-title">
+            <h2 class="title text-center">Course Contents</h2>
+        </div>
+
+        <div class="row course-list">
+
+            <div class="single-course">
+                <div class="sc-wrp">
+                    <div class="sc-img">
+                        <img src="static/img/course.jpg" alt="">
+                        <span class="c-year">Year 2</span>
+                    </div>
+                    <div class="sc-title">
+                        <span>STW206CDE</span>
+                        <h3>Real World Project</h3>
+                    </div>
+                    <div class="sc-button">
+                        <a href="/mycourses/STW206CDE" class="btns">Go to module</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-course">
+                <div class="sc-wrp">
+                    <div class="sc-img">
+                        <img src="static/img/course.jpg" alt="">
+                        <span class="c-year">Year 2</span>
+                    </div>
+                    <div class="sc-title">
+                        <span>STW207SE</span>
+                        <h3>OS, Security and Network</h3>
+                    </div>
+                    <div class="sc-button">
+                        <a href="/mycourses/STW207SE" class="btns">Go to module</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-course">
+                <div class="sc-wrp">
+                    <div class="sc-img">
+                        <img src="static/img/course.jpg" alt="">
+                        <span class="c-year">Year 2</span>
+                    </div>
+                    <div class="sc-title">
+                        <span>STW245CT</span>
+                        <h3>Ethical Hacking I</h3>
+                    </div>
+                    <div class="sc-button">
+                        <a href="/mycourses/STW245CT" class="btns">Go to module</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 	
+
+    
+{% endblock %}

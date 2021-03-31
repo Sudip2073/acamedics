@@ -1,29 +1,38 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block content %}
+{% block content %}    
+<style>
+    .rows{
+		max-width: 1500px;
+		max-height:2100px;
+		margin: 20 auto;
+		border-radius: 50%;
+        margin-left: 300px;
+		padding-bottom: 50px;
+    }
+</style>
+<body>
+<div><h3 id="add" style=" padding-left: 320px;">Add Request</h3>
+        
 
-<div class="supp">    
-    {% csrf_token %}
-    <div class="card card-body">
-        <h3 class="heading">Submit a ticket</h3>
     </div>
-    <div class="card card-body">
-        <form method="POST" action="" enctype="multipart/form-data">
-
-            <h5>Reason for request</h5>
-            <input type="text" name="title">
-
-            <h5>Request</h5>
-            <textarea name="your-request" cols="40" rows="10" placeholder="Your Request"></textarea>
+    <div class="col-md-9">
+        <div class="card card-body">
             
-            <h5>Priority</h5>
-            <select class="  dropdown" id="helpdesk_ticket_priority" name="helpdesk_ticket[priority]" aria-invalid="false"><option value="1">Low</option>
-                <option value="2">Medium</option>
-                <option value="3">High</option>
-                <option value="4">Urgent</option></select>
-            <button type="submit" class="btn btn-success" value="Submit">Submit</button>
-        </form>
+            <form method="POST" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-2line">
+                    {{form}}
+                </div>
+            <input class="btn btn-primary" type="submit" name="Update Information">
+            </form>
+        </div>
     </div>
-</div>
 
+</body>    
+
+    
+    
+    
 {% endblock %}
+    

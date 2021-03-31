@@ -7,3 +7,9 @@ from django.contrib.auth.decorators import login_required
 @login_required(login_url='login')
 def dash(request):
     return render(request,'dash.html')
+
+def guide(request):
+    return render(request,'guideline.html')
+
+def about(request):
+        return render(request,'about.html')

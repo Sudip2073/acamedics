@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
+{% load embed_video_tags %}
 
 {% block content%}
 <div class=detail>
         <h1>{{Mod.name}}</h1>
         <h4>Year {{Mod.year}}</h4>
         <p>{{Mod.description}}</p>
-        {% if Mod.url != none %}
-                <p><a href="//{{Mod.url}}">{{Mod.url}}</a></p>
-        {% endif %}
+        {% video Mod.url '50% x 50%' %}
+
         <p><a href=" /img/{{Mod.file}}">{{Mod.file}}</a></p>
+        
 </div>
+
 {% endblock %}
 

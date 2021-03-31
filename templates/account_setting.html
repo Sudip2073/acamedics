@@ -5,32 +5,65 @@
 <style>
 	.profile-pic{
 		max-width: 200px;
-		max-height:200px;
+		max-height:250px;
 		margin: 0 auto;
 		border-radius: 50%;
 	}
+	.rows{
+		max-width: 1500px;
+		max-height:2100px;
+		margin: 20 auto;
+		border-radius: 50%;
+        margin-left: 300px;
+		padding-bottom: 50px;
+
+	}
+	.btnbtn-primary{
+		background-color:  #24c1e9;
+		font-size: 19px;
+		border-radius: 5px;
+		padding: 7px 14px;
+		border: 1px solid #daf1ff;
+		padding-bottom: 8px;
+    	top: 950px;
+		left: 20px;
+		position: relative;
+		
+	}
 </style>
 
-
-<div class="row">
-	<div class="col-md-3">
-		<div class="card card-body">
-			<a class="btn btn-warning" href="{% url 'dash' %}"> &#8592; Back to Profile</a>
-			<hr>
-			<h3 style="text-align: center">Account Settings</h3>
-			<hr>
-			<img class="profile-pic" src="{{request.user.student.profile_pic.url}}" >
-		</div>
+<div class="banner">
+	<img src="{% static '\img\banner.jpg' %}" alt="Banner Image">
+	<span><img class="profile-pic" src="{{request.user.student.profile_pic.url}}" ></span>
+</div>
+<div class="page-title page-title-1 text-center">
+	<div class="title-wrp">
+		<h2 class="title">{{request.user.student.name}}</h2>
+		<p>Write your bio here...</p>
 	</div>
+</div>
+
+<div class="containerin" style="padding-left: 320px; padding-bottom: 20px;">
+	<h2>Personal Details</h2>
+	
+	
+</div>
+<div class="rows">
+	
+	
 	<div class="col-md-9">
-		<div class="card card-body">
+		<div class="card card-body" style="padding-bottom: 50px;">    
+
 			
 			<form method="POST" action="" enctype="multipart/form-data">
 				{% csrf_token %}
-				{{form.as_p}}
-		
-			<input class="btn btn-primary" type="submit" name="Update Information">
+				<div class="form-2line">
+					{{form.as_p}}
+				</div>
+				<input class="btnbtn-primary" type="submit" name="Update Information">
+
 			</form>
+
 		</div>
 	</div>
 </div>

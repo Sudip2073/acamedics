@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <h1>Notifications</h1>
+    <!-- <h1>Notifications</h1>
 
     <div id="reccomended" class="owl-carousel owl-theme">
         {% for note in notice %}
@@ -17,5 +17,40 @@
         </div>
         {% endfor %}
 
-    </div>
+    </div> -->
+
+
+    <!-- /container -->
+
+		<div class="bg_color_1">
+			<div class="container margin_120_95">
+				<div class="main_title_2">
+					<span><em></em></span>
+					<h2>News and Events</h2>
+					<p>Notice</p>
+				</div>
+                {% for note in notice %}
+
+                    <div class="row">
+                        <div class="col-lg-6">
+
+                                <a class="box_news" href="#0">
+                                    <figure><img src="img/news_home_1.jpg" alt="">
+                                        <figcaption><strong>28</strong>Dec</figcaption>
+                                    </figure>
+                                    <h4>{{note.title}}</h4>
+                                    <p>{{note.content}}</a>
+
+                        </div>
+
+					<!-- /box_news -->
+					
+					<!-- /box_news -->
+                {% endfor %}
+
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
 {% endblock %}

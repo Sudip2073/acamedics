@@ -1,0 +1,61 @@
+{%  extends 'base.html' %}
+{% load static %}
+{% block content %} 
+
+<style>
+	.profile-pic{
+		max-width: 200px;
+		max-height:200px;
+		margin: 20 auto;
+		border-radius: 50%;
+        
+	}
+    .container2{
+		max-width: 2000px;
+		max-height:2000px;
+		margin: 20 auto;
+		border-radius: 50%;
+        margin-left: 60px;
+        margin-bottom: 500px;
+	}
+    
+</style>
+<body>
+
+    <div class="banner">
+        <img src="{% static '\img\banner.jpg' %}" alt="Banner Image">
+        <span><img class="profile-pic" src="{{request.user.student.profile_pic.url}}" ></span>
+    </div>
+
+    <div class="page-title page-title-1 text-center">
+        <div class="title-wrp">
+            <h2 class="title">{{request.user.student.name}}</h2>
+            <p>Write your bio here...</p>
+        </div>
+    </div>
+    
+
+    <div class="container2">
+        <h2>Personal Details</h2>
+        
+        
+    </div>
+    <div class="col-md-9">
+        <div class="card card-body">
+            
+            <form method="POST" action="" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-2line">
+                    {{form.as_p}}
+                </div>
+            <input class="btn btn-primary" type="submit" name="Update Information">
+            </form>
+        </div>
+    </div>
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+{% endblock %}

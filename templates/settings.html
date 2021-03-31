@@ -1,13 +1,23 @@
 {% extends 'base.html'%}
 {% block content %}
-<h1>Change your password</h1>
-<div class="col-12 form-input">
-    <form method="post" action="">
+<div class="col-md-12">
+    <div class="card card-body">
+        <h1 style="padding-bottom: 50px; text-align: center;
+        ">Change your password</h1>
+
         {% csrf_token %}
-        <div class="form-group">
+        <div class="form-2line" style="padding-bottom: 25px;">            
             <input type="password" name= "old_password" class="form-control" placeholder="Old Password">
+        </div>
+        <div class="form-2line" style="padding-bottom: 25px;">
             <input type="password" name= "new_password1" class="form-control" placeholder="New Password">
+        </div>
+
+            
+        <div class="form-2line" style="padding-bottom: 25px;">
             <input type="password" name= "new_password2" class="form-control" placeholder="Confirm Password">
+        </div>
+            
 
             {%for field in form %}
                 {% for error in field.errors %}
@@ -15,8 +25,10 @@
                 {% endfor %}
             {% endfor %}
         
-            <button type="submit"> Reset </button>
-        </div>
-    </form>
+            <button type="submit" style="
+            width: 54px;  text-align: center;
+        "> Reset </button>
+    </div>
+    
 </div>
 {% endblock %}

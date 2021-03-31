@@ -8,3 +8,4 @@ def notify(request):
         'notice' : notice
     })
 
+

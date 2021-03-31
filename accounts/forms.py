@@ -9,4 +9,4 @@ class Accountform(ModelForm):
 	class Meta:
 		model = Student
 		fields = '__all__'
-		exclude = ['user','sid']
+		exclude = ['user','sid',]
