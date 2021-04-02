@@ -22,7 +22,7 @@
             <form method="POST" action="" enctype="multipart/form-data">
                 {% csrf_token %}
                 <div class="form-2line">
-                    {{form}}
+                    {{form.as_p}}
                 </div>
             <input class="btn btn-primary" type="submit" name="Update Information">
             </form>
