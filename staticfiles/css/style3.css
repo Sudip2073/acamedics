@@ -1,0 +1,412 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  box-sizing: border-box;
+}
+.homepage {
+  align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 2673px;
+  width: 1920px;
+}
+.homepage .academics {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+  margin-top: 156px;
+  min-height: 594px;
+  width: 1588px;
+}
+.homepage .course-card {
+  align-items: flex-start;
+  background-color: var(--concrete);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  min-height: 470px;
+  width: 720px;
+}
+.homepage .course-card-1 {
+  align-items: flex-start;
+  background-color: var(--concrete);
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  margin-left: 151px;
+  min-height: 470px;
+  width: 720px;
+}
+.homepage .courses {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1px;
+  margin-top: 183px;
+  min-height: 643px;
+  width: 1593px;
+}
+.homepage .ellipse-4 {
+  height: 110px;
+  width: 110px;
+}
+.homepage .explore-courses {
+  height: 77px;
+  letter-spacing: 0px;
+  min-height: 77px;
+  text-align: center;
+  width: 301px;
+}
+.homepage .featured-courses {
+  height: 72px;
+  letter-spacing: 0px;
+  margin-left: 10px;
+  min-height: 72px;
+  min-width: 439px;
+  text-align: center;
+}
+.homepage .flex-row {
+  align-items: flex-start;
+  display: flex;
+  height: 470px;
+  margin-right: 2px;
+  margin-top: 101px;
+  min-width: 1591px;
+}
+.homepage .flex-row-1 {
+  align-items: flex-start;
+  display: flex;
+  min-width: 1584px;
+}
+.homepage .flex-row-2 {
+  align-items: flex-start;
+  display: flex;
+  margin-right: 14px;
+  margin-top: 108px;
+  min-width: 1586px;
+}
+.homepage .go-to-module-i4112 {
+  height: 50px;
+  left: 0px;
+  letter-spacing: 0px;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  width: 527px;
+}
+.homepage .group-1 {
+  align-items: flex-start;
+  align-self: center;
+  display: flex;
+  margin-left: 2px;
+  margin-top: 20px;
+  min-width: 527px;
+}
+.homepage .keyboardarrowdown {
+  align-items: flex-end;
+  align-self: flex-end;
+  display: flex;
+  height: 40px;
+  margin-bottom: 3px;
+  margin-left: 12px;
+  padding: 13px 10px;
+  width: 40px;
+}
+.homepage .line-3 {
+  height: 2px;
+  margin-top: 34px;
+  width: 720px;
+}
+.homepage .navbar {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  width: 1920px;
+}
+.homepage .notifications {
+  align-items: flex-end;
+  align-self: center;
+  display: flex;
+  height: 40px;
+  margin-left: 707px;
+  margin-top: 8px;
+  padding: 3.1px 6px;
+  width: 40px;
+}
+.homepage .overlap-group {
+  align-items: flex-start;
+  background-image: url();
+  background-size: 100% 100%;
+  display: flex;
+  height: 13px;
+  min-width: 20px;
+  padding: 5.8px 9.8px;
+}
+.homepage .overlap-group-1 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  min-height: 492px;
+  padding: 35px 28px;
+  width: 481px;
+}
+.homepage .overlap-group-2 {
+  align-items: flex-start;
+  background-image: url("/img/course.jpg");
+  background-size: 100% 100%;
+  display: flex;
+  height: 249px;
+  min-width: 720px;
+  padding: 29px 49.5px;
+}
+.homepage .overlap-group-3 {
+  height: 50px;
+  position: relative;
+  width: 527px;
+}
+.homepage .overlap-group6 {
+  align-items: flex-start;
+  background-color: var(--caribbean-green);
+  border-radius: 13px;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 3px;
+  margin-top: 17px;
+  min-width: 368px;
+  padding: 0 33px;
+}
+.homepage .overlap-group7 {
+  align-items: center;
+  background-color: var(--cerulean);
+  display: flex;
+  height: 130px;
+  min-width: 1920px;
+  padding: 0 160px;
+}
+.homepage .overlap-group8 {
+  align-items: flex-start;
+  background-color: var(--cerulean-2);
+  display: flex;
+  height: 70px;
+  min-width: 1920px;
+  padding: 7px 160px;
+}
+.homepage .real-world-project-i {
+  height: 36px;
+  letter-spacing: 0px;
+  margin-left: 49.5px;
+  min-height: 36px;
+}
+.homepage .rectangle-17 {
+  background-color: var(--caribbean-green);
+  border-radius: 5px;
+  height: 50px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 525px;
+}
+.homepage .rectangle-20 {
+  height: 500px;
+  margin-left: 113px;
+  object-fit: cover;
+  width: 579px;
+}
+.homepage .rectangle-23 {
+  align-self: center;
+  height: 305px;
+  margin-left: 1px;
+  margin-top: 22px;
+  object-fit: cover;
+  width: 408px;
+}
+.homepage .span0 {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 64px;
+  font-weight: 700;
+}
+.homepage .span1 {
+  color: rgba(0, 0, 0, 1);
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 48px;
+  font-weight: 700;
+}
+.homepage .span2 {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 32px;
+  font-weight: 600;
+}
+.homepage .stw206-cde-i4112 {
+  height: 27px;
+  letter-spacing: 0px;
+  margin-left: 49.5px;
+  margin-top: 31px;
+  min-height: 27px;
+}
+.homepage .text-1 {
+  height: 372px;
+  letter-spacing: 0px;
+  min-height: 372px;
+  width: 892px;
+}
+.homepage .text-2 {
+  height: 54px;
+  letter-spacing: 0px;
+  min-height: 54px;
+  text-align: center;
+  width: 194px;
+}
+.homepage .text-3 {
+  height: 54px;
+  letter-spacing: 0px;
+  margin-left: 43px;
+  min-height: 54px;
+  text-align: center;
+  width: 202px;
+}
+.homepage .text-4 {
+  height: 54px;
+  letter-spacing: 0px;
+  margin-left: 43px;
+  min-height: 54px;
+  text-align: center;
+  width: 194px;
+}
+.homepage .text-5 {
+  height: 72px;
+  letter-spacing: 0px;
+  margin-left: 51px;
+  min-height: 72px;
+  min-width: 328px;
+  text-align: center;
+}
+.homepage .vector {
+  height: 33px;
+  width: 28px;
+}
+.homepage .vector-1 {
+  align-self: center;
+  height: 33px;
+  margin-left: 22px;
+  margin-top: 9px;
+  width: 28px;
+}
+.homepage .vector-2 {
+  height: 1px;
+  width: 1px;
+}
+.homepage .vector-3 {
+  align-self: center;
+  height: 31px;
+  margin-left: 28px;
+  margin-top: 11px;
+  width: 31px;
+}
+.homepage .why-acad-e-mics {
+  height: 72px;
+  letter-spacing: 0px;
+  margin-left: 2px;
+  margin-top: 80px;
+  min-height: 72px;
+  min-width: 484px;
+  text-align: center;
+}
+.homepage .why1 {
+  align-items: flex-start;
+  display: flex;
+  height: 492px;
+  min-width: 483px;
+}
+.homepage .why2 {
+  align-items: flex-start;
+  display: flex;
+  height: 492px;
+  margin-left: 41px;
+  min-width: 483px;
+}
+.homepage .why3 {
+  align-items: flex-start;
+  display: flex;
+  height: 492px;
+  margin-left: 96px;
+  min-width: 483px;
+}
+.homepage .x-learning {
+  height: 92px;
+  letter-spacing: 0px;
+  min-height: 92px;
+  text-align: center;
+  width: 419px;
+}
+.homepage .year {
+  height: 28px;
+  width: 136px;
+}
+.poppins-bold-black-48px {
+  color: black;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+}
+.poppins-bold-white-64px {
+  color: transparent;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+}
+.poppins-medium-black-18px {
+  color: black;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+.poppins-medium-black-24px {
+  color: black;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+.poppins-medium-black-36px {
+  color: black;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+}
+.poppins-semi-bold-white-18px {
+  color: white;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+.poppins-semi-bold-white-36px {
+  color: white;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+}
+:root {
+  --caribbean-green: rgba(7, 227, 169, 0.8);
+  --cerulean: rgba(7, 165, 227, 1);
+  --cerulean-2: rgba(7, 165, 227, 0.66);
+  --concrete: rgba(242, 242, 242, 1);
+  --white: rgba(255, 255, 255, 0.8);
+}
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
