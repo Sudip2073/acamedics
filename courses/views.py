@@ -21,7 +21,7 @@ def modules_detail(request, Mod_code):
         Mod = Modules.objects.get(mod_code=str(Mod_code))
     except Modules.DoesNotExist:
         raise Http404('Modules not found')
-    return render(request, 'sub_detail.html',{
+    return render(request, 'content.html',{
         'Mod': Mod,
     })
 

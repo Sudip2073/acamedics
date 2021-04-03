@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static '/css/style1.css' %}">
+
+<body>
+    <div class="module-page">
+        <div class="flex-col-1">
+          
+          <div class="course-name">
+            <div class="overlap-group-2">
+              <img class="d-qej-x2uc-p-bs" src="{% static '/img/banner.jpg' %}" />
+              <div class="rectangle-13"></div>
+              <img class="line-4" src="{% static '/img/Grey_background.jpg' %}" />
+              <div class="real-world-project valign-text-middle poppins-medium-black-36px">{{Mod.name}}</div>
+              <img class="line-5" src="{% static '/img/Grey_background.jpg' %}" />
+              <div class="year-2 valign-text-middle poppins-medium-black-24px-2">Year {{Mod.year}}</div>
+              <div class="address valign-text-middle poppins-medium-black-24px-2">{{Mod.credit}} Credit</div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-row">
+          <div class="flex-col">
+            <div class="module-overview-1">
+              <div class="overlap-group14">
+                <div class="module-overview valign-text-middle poppins-medium-black-32px">Module Overview</div>
+                <div class="module-description valign-text-middle poppins-medium-black-24px">
+                  {{Mod.description}}
+                </div>
+              </div>
+            </div>
+            <div class="learning-outcomes">
+              <div class="overlap-group13">
+                <div class="learning valign-text-middle poppins-medium-black-24px">
+                  Knowledge about modern operating systems (OS) internals and associated security<br /><br />Basic OS concepts
+                  such as processes, memory management, drivers and file systems<br /><br />Learn about necessary interactions
+                  between the OS and the system hardware and devices and those security issues of relevance to the Operating
+                  System
+                </div>
+                <div class="learning-outcomes-1 valign-text-middle poppins-medium-black-32px">Learning Outcomes</div>
+              </div>
+            </div>
+          </div>
+          <div class="lessons">
+            <div class="overlap-group3">
+              <div class="lessons-1 valign-text-middle poppins-medium-black-32px">Lessons</div>
+              <div class="lesson-1">
+                <div class="overlap-group-1">
+                  <a href="#"><div class="lesson- valign-text-middle poppins-medium-black-24px">Lesson 1</div></a>
+                </div>
+              </div>
+              <div class="lesson--1">
+                <div class="overlap-group-1">
+                  <a href="#"><div class="lesson- valign-text-middle poppins-medium-black-24px">Lesson 2</div></a>
+                </div>
+              </div>
+              <div class="lesson--1">
+                <div class="overlap-group-1">
+                  <a href="#"><div class="lesson--2 valign-text-middle poppins-medium-black-24px">Lesson 3</div></a>
+                </div>
+              </div>
+              <div class="lesson--1">
+                <div class="overlap-group-1">
+                  <a href="#"><div class="lesson--2 valign-text-middle poppins-medium-black-24px">Lesson 4</div></a>
+                </div>
+              </div>
+              <div class="lesson--3">
+                <div class="overlap-group-1">
+                  <a href="#"><div class="lesson- valign-text-middle poppins-medium-black-24px">Lesson 5</div></a>
+                </div>
+              </div>
+              <div class="lesson--3">
+                <div class="overlap-group-1">
+                  <a href="#"><div class="lesson- valign-text-middle poppins-medium-black-24px">Lesson 6</div></a>
+                </div>
+              </div>
+              <div class="lesson--3">
+                <div class="overlap-group-1">
+                  <a href="#"><div class="lesson- valign-text-middle poppins-medium-black-24px">Lesson 7</div></a>
+                </div>
+              </div>
+              <div class="lesson--3">
+                <div class="overlap-group-1">
+                  <a href="#"><div class="lesson- valign-text-middle poppins-medium-black-24px">Lesson 8</div></a>
+                </div>
+              </div>
+              <div class="lesson--3">
+                <div class="overlap-group-1">
+                  <a href="#"><div class="lesson- valign-text-middle poppins-medium-black-24px">Lesson 9</div></a>
+                </div>
+              </div>
+              <div class="lesson--3">
+                <div class="overlap-group-1">
+                  <a href="#"><div class="lesson- valign-text-middle poppins-medium-black-24px">Lesson 10</div></a>
+                </div>
+              </div>
+              <div class="assignment-1">
+                <div class="overlap-group">
+                  <div class="assignment valign-text-middle poppins-medium-black-32px">Assignment</div>
+                  <a href="#"><div class="view-assignment valign-text-middle poppins-medium-black-24px">View Assignment</div></a>
+                  <div class="overlap-group1">
+                    <a href="#" id="subbtn"><div class="submit valign-text-middle poppins-bold-white-24px">
+                      <span><span class="span0">Submit</span><span class="span1">&nbsp;</span> </span>
+                    </div></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+{% endblock %}   
+
+    

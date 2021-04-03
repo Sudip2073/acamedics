@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class Student(models.Model):
-    user = models.OneToOneField (User, null= True, blank= True, on_delete=models.CASCADE)
+    user = models.OneToOneField (User, on_delete=models.CASCADE, null=True, blank=True)
     name= models.CharField(max_length=100)
     sid =  models.IntegerField(validators=[MinValueValidator(180000), MaxValueValidator(1901000)])
     sub_choice=[('E','BSc. (Hons) Ethical Hacking And Cybersecurity'),('CS','BSc. (Hons) Computing')]
@@ -15,7 +15,7 @@ class Student(models.Model):
     year= models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(3)])
     profile_pic = models.ImageField(null=True, blank= True)
     batch = models.CharField(max_length=5)
-
+    
     def __str__(self):
         return str(self.user)
     

@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static '/css/style.css' %}">
+<link rel="stylesheet" href="{% static '/css/style3.css' %}">
+<div class="homepage">
+  
+    <div class="academics">
+      <div class="flex-row-1">
+        <h1 class="text-1 valign-text-middle poppins-bold-white-64px">
+          <span
+            ><span class="span0">This is Acad-Emics<br /></span><span class="span1"><br /></span
+            ><span class="span2"
+              >A virtual learning platform is a gateway for students to access and use the course materials easily through
+              internet.</span
+            >
+          </span>
+        </h1>
+        <img class="rectangle-20" src="{% static '/img/text1img.JPG' %}" />
+      </div>
+      <div class="overlap-group6">
+        <a href="#"><div class="explore-courses valign-text-middle poppins-semi-bold-white-36px">Explore Courses</div></a>
+      </div>
+    </div>
+    <div class="why-acad-e-mics valign-text-middle poppins-bold-black-48px">Why Acad-E-mics?</div>
+    <div class="flex-row-2">
+      <div class="why1">
+        <div class="overlap-group-1">
+          <div class="x-learning valign-text-middle poppins-medium-black-36px">Social Learning</div>
+          <img class="rectangle-23" src="{% static '/img/socialimg.JPG' %}" />
+        </div>
+      </div>
+      <div class="why2">
+        <div class="overlap-group-1">
+          <div class="x-learning valign-text-middle poppins-medium-black-36px">Visible Learning</div>
+          <img class="rectangle-23" src="{% static '/img/learnimg.JPG' %}" />
+        </div>
+      </div>
+      <div class="why3">
+        <div class="overlap-group-1">
+          <div class="x-learning valign-text-middle poppins-medium-black-36px">Efficient Learning</div>
+          <img class="rectangle-23" src="{% static '/img/efficient.JPG' %}" />
+        </div>
+      </div>
+    </div>
+    <div class="courses">
+      <div class="featured-courses valign-text-middle poppins-bold-black-48px">Featured Courses</div>
+      <div class="flex-row">
+        <div class="course-card">
+          <div class="overlap-group-2">
+            <div class="year"></div>
+          </div>
+          <div class="stw206-cde-i4112 valign-text-middle poppins-medium-black-18px">BSc Hons</div>
+          <div class="real-world-project-i valign-text-middle poppins-medium-black-24px">Computing</div>
+          <img class="line-3" src="{% static '/img/course.jpg' %}" />
+          <div class="group-1">
+            <div class="overlap-group-3">
+              <div class="rectangle-17"></div>
+              <a href=""><div class="go-to-module-i4112 valign-text-middle poppins-semi-bold-white-18px">Explore Course</div></a>
+            </div>
+          </div>
+        </div>
+        <div class="course-card-1">
+          <div class="overlap-group-2">
+            <div class="year"></div>
+          </div>
+          <div class="stw206-cde-i4112 valign-text-middle poppins-medium-black-18px">BSc Hons</div>
+          <div class="real-world-project-i valign-text-middle poppins-medium-black-24px">
+            Ethical Hacking and Cybersecurity
+          </div>
+          <img class="line-3" src="{% static '/img/course.jpg' %}" />
+          <div class="group-1">
+            <div class="overlap-group-3">
+              <div class="rectangle-17"></div>
+              <a href="/"><div class="go-to-module-i4112 valign-text-middle poppins-semi-bold-white-18px">Explore Course</div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+{% endblock %}

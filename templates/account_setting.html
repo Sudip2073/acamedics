@@ -34,7 +34,7 @@
 
 <div class="banner">
 	<img src="{% static '\img\banner.jpg' %}" alt="Banner Image">
-	<span><img class="profile-pic" src="{{request.user.student.profile_pic.url}}" ></span>
+	<span><img class="profile-pic" src="/static{{request.user.student.profile_pic.url}}" ></span>
 </div>
 <div class="page-title page-title-1 text-center">
 	<div class="title-wrp">
