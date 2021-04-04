@@ -14,4 +14,4 @@ def support(request):
                 form.save()
                 
     context = {'form':form}
-    return render(request,'Support.html',context)
+    return render(request,'support.html',context)
