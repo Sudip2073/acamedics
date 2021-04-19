@@ -4,7 +4,8 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 # Create your views here.
-
+def register(request):
+    return render(request,'register.html')
 
 def loginpage(request):
     if request.user.is_authenticated:
@@ -30,3 +31,4 @@ def loginpage(request):
 def logoutuser(request):
     logout(request)
     return redirect('login')
+

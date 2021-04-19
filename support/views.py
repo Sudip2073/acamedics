@@ -5,13 +5,13 @@ from .models import Help
 from .forms import Supportform
 # Create your views here.
 @login_required(login_url='login')
-
 def support(request):
     form= Supportform()
     if request.method == 'POST':
             form = Supportform(request.POST)
             if form.is_valid():
                 form.save()
+            
                 
     context = {'form':form}
     return render(request,'support.html',context)
